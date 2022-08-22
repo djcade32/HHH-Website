@@ -1,0 +1,13 @@
+.articlesContainer {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 3rem 0px; 
+    grid-template-areas: 
+        ". . .";
+    justify-items: center;
+    margin-top: 5rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}

@@ -1,0 +1,20 @@
+.navbarContainer {
+    border-bottom: 1px solid var(--turquoise);
+}
+
+
+.hhhLogo {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 40px;
+    width: fit-content;
+}
+
+.hhhLogoText {
+    color: var(--white);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-logo);
+    font-weight: var(--font-weight-bold);
+}
