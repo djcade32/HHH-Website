@@ -8,13 +8,25 @@ function App() {
 
   useMemo(() => {
     fetchAOLArticles();
+    fetchFioneersArticles();
   }, []);
 
   function fetchAOLArticles() {
-    console.log("Fetching articles");
+    console.log("Fetching AOL articles");
     fetch("/api/artOfHealthyLivingScrape")
       .then((res) => res.json())
       .then((articles) => setFetchedAOLArticles(articles));
+  }
+
+  function fetchFioneersArticles() {
+    console.log("Fetching Fioneers articles");
+    fetch("/api/fioneersScrape")
+      .then((res) => res.json())
+      .then((articles) =>
+        articles.forEach((article) => {
+          setFetchedAOLArticles((prevArticles) => [...prevArticles, article]);
+        })
+      );
   }
 
   return (

@@ -1,28 +1,30 @@
 .quoteContainer {
-    margin-top: 5rem;
-    text-align: center;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 5rem;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quoteTitle {
-    color: var(--white);
-    font-size: var(--font-size-header);
-    font-family: var(--font-family-quote);
-    font-weight: var(--font-weight-bold);
+  color: var(--white);
+  margin-bottom: 3rem;
+  font-size: var(--font-size-header);
+  font-family: var(--font-family-quote);
+  font-weight: var(--font-weight-bold);
 }
 
 .quote {
-    color: var(--white);
-    font-size: var(--font-size-subheader);
-    font-family: var(--font-family-quote);
-    font-weight: var(--font-weight-bold);
+  color: var(--white);
+  font-size: var(--font-size-subheader);
+  font-family: var(--font-family-quote);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 3rem;
 }
 
 .quoteAuthor {
-    color: var(--white);
-    font-size: var(--font-size-subheader);
-    font-family: var(--font-family-quote);
-    font-weight: var(--font-weight-bold);
+  color: var(--white);
+  font-size: var(--font-size-subheader);
+  font-family: var(--font-family-quote);
+  font-weight: var(--font-weight-bold);
 }

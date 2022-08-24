@@ -1,20 +1,21 @@
 .navbarContainer {
-    border-bottom: 1px solid var(--turquoise);
+  border-bottom: 1px solid var(--turquoise);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-
 .hhhLogo {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    column-gap: 10px;
-    margin-left: 40px;
-    width: fit-content;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  column-gap: 10px;
+  margin-left: 40px;
+  width: fit-content;
 }
 
 .hhhLogoText {
-    color: var(--white);
-    font-family: var(--font-family-heading);
-    font-size: var(--font-size-logo);
-    font-weight: var(--font-weight-bold);
+  color: var(--white);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-logo);
+  font-weight: var(--font-weight-bold);
 }
