@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./ArticleCard.module.css";
-import fioneersLogo from "../../assets/websiteIcons/fioneers-ico.png";
+import fioneersIcon from "../../assets/websiteIcons/fioneers-ico.png";
 import aohlIcon from "../../assets/websiteIcons/aohl-heart-ico.png";
+import muoIcon from "../../assets/websiteIcons/muo-ico.jpg";
 
 export default function ArticleCard(props) {
   const { articleInfo } = props;
@@ -10,7 +11,9 @@ export default function ArticleCard(props) {
       case "AOHL":
         return aohlIcon;
       case "FIONEERS":
-        return fioneersLogo;
+        return fioneersIcon;
+      case "MUO":
+        return muoIcon;
       default:
         break;
     }

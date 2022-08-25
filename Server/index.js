@@ -23,8 +23,8 @@ app.get("/api/artOfHealthyLivingScrape", async (req, res) => {
     await page.goto("https://artofhealthyliving.com/", { waitUntil: "load" });
 
     // Scroll to the bottom of the page with puppeteer-autoscroll-down
-    await scrollPageToBottom(page);
 
+    await scrollPageToBottom(page);
     // Scrapping neccessary info from articles
     const grabArticles = await page.evaluate(() => {
       const articles = document.querySelectorAll(
@@ -138,7 +138,7 @@ app.get("/api/makeUseOfScrape/Happiness", async (req, res) => {
     await scrollPageToBottom(page);
     // Scrapping neccessary info from articles
     const grabArticles = await page.evaluate(() => {
-      const numOfArticlesToFetch = 10;
+      const numOfArticlesToFetch = 9;
       let articles = [];
 
       // A special case to get the main article on the website
@@ -190,7 +190,7 @@ app.get("/api/makeUseOfScrape/Happiness", async (req, res) => {
           " " +
           date.getDate() +
           ", " +
-          date.getYear();
+          date.getFullYear();
 
         const articleUrl =
           "https://www.makeuseof.com" +

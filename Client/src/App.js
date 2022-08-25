@@ -12,6 +12,7 @@ function App() {
     console.log("Running UseEffect");
     fetchAOLArticles();
     fetchFioneersArticles();
+    fetchMUOArticles();
   }, []);
 
   async function fetchAOLArticles() {
@@ -32,6 +33,20 @@ function App() {
     try {
       const response = await fetch("/api/fioneersScrape");
       if (!response.ok) throw Error("Failed to Fetch Fioneers Articles");
+      const articles = await response.json();
+      articles.forEach((article) => {
+        setFetchedAOLArticles((prevArticles) => [...prevArticles, article]);
+      });
+    } catch (error) {
+      setFetchError(error.message);
+    }
+  }
+
+  async function fetchMUOArticles() {
+    console.log("Fetching Make Use Of articles");
+    try {
+      const response = await fetch("/api/makeUseOfScrape/Happiness");
+      if (!response.ok) throw Error("Failed to Fetch Make Use Of Articles");
       const articles = await response.json();
       articles.forEach((article) => {
         setFetchedAOLArticles((prevArticles) => [...prevArticles, article]);
